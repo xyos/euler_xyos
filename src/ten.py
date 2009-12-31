@@ -7,5 +7,5 @@ def sumprim(num):
             sum = sum+i
     print sum
 
-sumprim(2000000)
+#sumprim(2000000)
 

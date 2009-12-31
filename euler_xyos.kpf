@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="fd7b71be-d85f-4f0e-a27c-3c194bf89364" kpf_version="4" name="euler_xyos.kpf">
+<preference-set idref="fd7b71be-d85f-4f0e-a27c-3c194bf89364">
+  <boolean id="import_live">1</boolean>
+</preference-set>
+</project>

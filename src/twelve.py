@@ -4,9 +4,18 @@ def triangle_num(max_div):
     i=0
     num=0
     div=0
-    while True:
+    val=0
+    while max_div>div:
        i=i+1
        num = num +i
+       temp=factors(num)
+       if div<temp:
+        div=temp
+        val=num
+        print val
+        print div
+    return val
+
 def factors(num):
     prim=2
     lista=[]
@@ -17,11 +26,17 @@ def factors(num):
             lista.append(prim)
         else:
             prim=next_prime(prim)
-    print lista
+    current = 0
+    factors = 1
+    for i in lista:
+        if i !=current:
+            factors = factors*(lista.count(i)+1)
+            current = i
+    return factors
     
 def next_prime(prim):
     while True:
         prim=prim+1
         if prime(prim):
             return prim
-factors(24)
+print triangle_num(500)
